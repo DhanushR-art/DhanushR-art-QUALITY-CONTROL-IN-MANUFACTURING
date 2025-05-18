@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Defect Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Defect Detection Form</h2>
+    <form method="post">
+        <label for="feature1">Feature 1:</label>
+        <input type="number" step="any" name="feature1" required><br><br>
+        <label for="feature2">Feature 2:</label>
+        <input type="number" step="any" name="feature2" required><br><br>
+        <input type="submit" value="Predict">
+        <h2>Chat with DefectBot</h2>
+<form method="post" action="/chat">
+    <input type="text" name="message" required>
+    <input type="submit" value="Send">
+</form>
+{% if chat_response %}
+    <p><strong>DefectBot:</strong> {{ chat_response }}</p>
+{% endif %}
+    </form>
+    {% if result is not none %}
+        <h3>Prediction: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
