@@ -1,3 +1,5 @@
+IBM NAAN MUDHALVAN QUALITY CONTROL IN MANUFACTURING
+
 # 🧠 AI-EBPL – Quality Control in Manufacturing
 
 This project leverages Artificial Intelligence (AI) and Emerging Best Practices & Learnings (EBPL) to enhance **quality control** in manufacturing. It includes a **Streamlit-based chatbot**, a **FastAPI-powered backend**, and a **machine learning model** for defect prediction.
